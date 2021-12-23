@@ -11,7 +11,7 @@
       "request": {
         "method": "GET",
         "header": [],
-        "url": "localhost:5000/beers",
+        "url": "https://yeisongutty-test-ms-beer-bmllp.ondigitalocean.app/beers",
         "description": "Lista todas las cervezas que se encuentran en la base de datos"
       },
       "response": []
@@ -32,7 +32,7 @@
           "mode": "raw",
           "raw": "{\n    \"id\": 6,\n    \"name\": \"Cerveza Heineken\",\n    \"brewery\": \"Grupo Heineken\",\n    \"country\": \"HOLANDA\",\n    \"price\": 1.5,\n    \"currency\": \"EUR\"\n}"
         },
-        "url": "localhost:5000/beers",
+        "url": "https://yeisongutty-test-ms-beer-bmllp.ondigitalocean.app/beers",
         "description": "Ingresa una nueva cerveza"
       },
       "response": []
@@ -43,7 +43,7 @@
       "request": {
         "method": "GET",
         "header": [],
-        "url": "localhost:5000/beers/2",
+        "url": "https://yeisongutty-test-ms-beer-bmllp.ondigitalocean.app/beers/2",
         "description": "Busca una cerveza por su Id"
       },
       "response": []
@@ -55,9 +55,9 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "localhost:5000/beers/2/boxprice?currency=USD&quantity=1",
-          "host": ["localhost"],
-          "port": "5000",
+          "raw": "https://yeisongutty-test-ms-beer-bmllp.ondigitalocean.app/beers/2/boxprice?currency=USD&quantity=1",
+          "protocol": "https",
+          "host": ["yeisongutty-test-ms-beer-bmllp", "ondigitalocean", "app"],
           "path": ["beers", "2", "boxprice"],
           "query": [
             {
