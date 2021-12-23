@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "LOCAL",
+      "type": "go",
+      "request": "launch",
+      "mode": "auto",
+      "program": "${workspaceRoot}",
+      "env": {
+        "DB_HOST": "DB_HOST",
+        "DB_NAME": "DB_NAME",
+        "DB_USER": "DB_USER",
+        "DB_PASSWORD": "DB_PASSWORD",
+        "DB_PORT": "DB_PORT",
+        "API_LAYER":"API_LAYER",
+        "ENV_NAME": "local"
+      },
+      "args": []
+    }
+  ]
+}

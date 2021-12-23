@@ -1,0 +1,77 @@
+{
+  "info": {
+    "_postman_id": "f62f7b0b-f8c1-4c84-91c4-682baba55399",
+    "name": "test_ms_beer",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Lista todas las cervezas",
+      "id": "1052fedc-5c95-4462-b031-471edfca33ec",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "localhost:5000/beers",
+        "description": "Lista todas las cervezas que se encuentran en la base de datos"
+      },
+      "response": []
+    },
+    {
+      "name": "Ingresa una nueva cerveza",
+      "id": "0ee76d61-ade3-4daa-a2e4-6baa22a3c14d",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"id\": 6,\n    \"name\": \"Cerveza Heineken\",\n    \"brewery\": \"Grupo Heineken\",\n    \"country\": \"HOLANDA\",\n    \"price\": 1.5,\n    \"currency\": \"EUR\"\n}"
+        },
+        "url": "localhost:5000/beers",
+        "description": "Ingresa una nueva cerveza"
+      },
+      "response": []
+    },
+    {
+      "name": "Busca una cerveza por su Id",
+      "id": "5472f777-9d18-49ee-80cc-ae25fcf66917",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "localhost:5000/beers/2",
+        "description": "Busca una cerveza por su Id"
+      },
+      "response": []
+    },
+    {
+      "name": "Obtiene el precio de una caja de cerveza por su Id",
+      "id": "2f9a01cf-229f-4426-89ba-3621bef0c3a2",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:5000/beers/2/boxprice?currency=USD&quantity=1",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["beers", "2", "boxprice"],
+          "query": [
+            {
+              "key": "currency",
+              "value": "USD"
+            },
+            {
+              "key": "quantity",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
