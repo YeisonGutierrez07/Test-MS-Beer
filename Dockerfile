@@ -29,5 +29,5 @@ COPY --from=builder /go/src .
 ENTRYPOINT  ["./main"]
 
 
-# // docker build -t yeisongutty/don-licorero-api:1.0.0 .
-# // docker run -d -p 5000 yeisongutty/don-licorero-api:1.0.0
+# // docker build -t yeisongutty/test_ms_beer:1.0.0 .
+# // docker run -d -p 5000 yeisongutty/test_ms_beer:1.0.0
